@@ -12,7 +12,7 @@ a0 = 0
 v0 = 0
 
 # Tid
-dt = 1
+dt = 1.5
 t_max = 100
 steps = int(t_max / dt)
 
@@ -94,8 +94,8 @@ x1 = np.linspace(0, t_max, steps + 1)
 
 plt.figure(figsize=(10, 6))
 
-plt.plot(x1, pos1, label="Euler")
 plt.plot(x2, y2, label="Analytical solution")
+plt.plot(x1, pos1, label="Euler")
 plt.plot(x1, pos2, label="RK4")
 
 plt.xlabel("Time")
